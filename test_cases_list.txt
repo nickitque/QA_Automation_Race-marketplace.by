@@ -1,0 +1,47 @@
+
+
+Home page:
+ Hero section:
+TC_ID1: Assert status 200 of homepage
+TC_ID2: Assert page title with "Главная страница | Race-Marketplace.pl"
+TC_ID3: Assert h1 with "Главная страница | Race-Marketplace.pl"
+TD_ID4: Assert description text
+TC_ID5: Assert image existing
+TC_ID6: Click "Marketplace" button in the hero section
+TC_ID7: Click "About Us" button in the hero section
+ Items section:
+TC_ID8: Assert there is 10 items published
+TC_ID9: Click "Go to Marketplace" button in the items section
+TC_ID7:
+TC_ID8:
+TC_ID9:
+ Blog section:
+TC_ID10:
+TC_ID11:
+TC_ID12:
+TC_ID13:
+TC_ID14:
+TC_ID15:
+TC_ID16:
+TC_ID17:
+TC_ID18:
+TC_ID19:
+TC_ID20:
+ Partners section:
+TC_ID:
+TC_ID:
+TC_ID:
+TC_ID:
+
+
+
+Base page
+ Header section:
+TC_ID:
+TC_ID:
+TC_ID:
+
+ Footer section:
+TC_ID:
+TC_ID:
+TC_ID:
