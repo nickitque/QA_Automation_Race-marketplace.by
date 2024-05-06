@@ -3,5 +3,7 @@ from .locators import LoginPageLocators
 
 
 class LoginPage(BasePage):
-    def should_be_login_form(self):
-        assert self.is_element_present(*LoginPageLocators.LOGIN_FORM), "There is no login form"
+    def fill_username_field_with_valid_data(self):
+        self.browser.find_element(*LoginPageLocators.USERNAME_FIELD).send_keys("Race-Marketplace")
+        self.browser.find_element(*LoginPageLocators.PASSWORD_FIELD).send_keys("Hahahalol.")
+        self.click_button(*LoginPageLocators.SUBMIT_BTN)

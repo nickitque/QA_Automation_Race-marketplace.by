@@ -1,4 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException
+from .locators import BasePageLocators
+import requests
 
 
 class BasePage():
@@ -10,9 +12,31 @@ class BasePage():
     def open(self):
         self.browser.get(self.url)
 
-    def is_element_present(self, how, what):
-        try:
-            self.browser.find_element(how, what)
-        except NoSuchElementException:
-            return False
-        return True
+    def is_displayed(self, how, what):
+        return self.browser.find_element(how, what).is_displayed()
+
+    def click_button(self, how, what):
+        self.browser.find_element(how, what).click()
+
+    def result_text(self, how, what):
+        return self.browser.find_element(how, what).text
+
+    def assert_status_code_200(self):
+        assert requests.head(self.url).status_code == 200, "The status code is not 200"
+
+    def assert_page_title(self, title):
+        assert self.browser.title == title, "The page title is different"
+
+    def click_login_btn_header(self):
+        self.click_button(*BasePageLocators.LOGIN_BTN_HEADER)
+        assert self.browser.current_url == "http://127.0.0.1:8000/login/"
+
+    def click_register_btn_header(self):
+        self.click_button(*BasePageLocators.REGISTER_BTN_HEADER)
+        assert self.browser.current_url == "http://127.0.0.1:8000/signup/"
+
+    def click_user_dropdown_btn(self):
+        self.click_button(*BasePageLocators.AUTH_USERNAME_DROPDOWN_HEADER)
+
+    def click_logout_btn(self):
+        self.click_button(*BasePageLocators.AUTH_LOGOUT_BTN_HEADER)

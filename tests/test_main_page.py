@@ -67,6 +67,39 @@ def test_guest_can_click_hero_about_us_btn_tc_id10(browser):
     page.click_go_to_marketplace_btn()
 
 
+def test_guest_should_see_blog_h2_tc_id11(browser):
+    """Checking the h2 blog title."""
+    page = MainPage(browser, link)
+    page.open()
+    page.should_be_blog_h2()
+
+
+def test_guest_should_see_blog_descripton_tc_id12(browser):
+    """Checking the h2 blog description text."""
+    page = MainPage(browser, link)
+    page.open()
+    page.should_be_blog_description()
+
+
+def test_guest_should_see_blog_descripton_tc_id13(browser):
+    """Checking the blog counters text."""
+    page = MainPage(browser, link)
+    page.open()
+    page.check_counters()
+
+
+def test_guest_can_click_go_to_blog_btn_tc_id15(browser):
+    page = MainPage(browser, link)
+    page.open()
+    page.click_go_to_blog_btn()
+
+
+def test_guest_can_check_blog_h2_tc_id16(browser):
+    page = MainPage(browser, link)
+    page.open()
+    page.check_our_partners_h2_text()
+
+
 def test_guest_should_see_login_link(browser):
     page = MainPage(browser, link)
     page.open()
@@ -76,5 +109,4 @@ def test_guest_should_see_login_link(browser):
 def test_guest_can_go_to_login_page_tc_id25(browser):
     page = MainPage(browser, link)
     page.open()
-    page.go_to_login_page()
-
+    page.click_login_btn_header()
