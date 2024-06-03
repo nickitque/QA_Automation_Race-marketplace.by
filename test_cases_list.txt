@@ -1,47 +1,125 @@
+Test cases with "A_" prefix means that it's automated.
+Tests are placed at "/tests/{page_name}.py", inside the files
+you can find test functions with tc_id{num} at the end of func title.
 
 
-Home page:
+1.Main Page (/tests/main_page.py):
+  A_TC_ID1: Assert status 200 of homepage
+  A_TC_ID2: Assert page title with "Главная страница | Race-Marketplace.pl"
  Hero section:
-TC_ID1: Assert status 200 of homepage
-TC_ID2: Assert page title with "Главная страница | Race-Marketplace.pl"
-TC_ID3: Assert h1 with "Главная страница | Race-Marketplace.pl"
-TD_ID4: Assert description text
-TC_ID5: Assert image existing
-TC_ID6: Click "Marketplace" button in the hero section
-TC_ID7: Click "About Us" button in the hero section
+  A_TC_ID3: Assert h1 with "Продажа тюнинг-запчастей и авто в РБ"
+  A_TD_ID4: Assert hero description text
+  A_TC_ID5: Assert hero image existing
+  A_TC_ID6: Click "Marketplace" button in the hero section
+  A_TC_ID7: Click "About Us" button in the hero section
  Items section:
-TC_ID8: Assert there is 10 items published
-TC_ID9: Click "Go to Marketplace" button in the items section
-TC_ID7:
-TC_ID8:
-TC_ID9:
+  A_TC_ID8: Assert 10 latest published items have images
+  A_TC_ID9: Click "Go to Marketplace" button in the items section
  Blog section:
-TC_ID10:
-TC_ID11:
-TC_ID12:
-TC_ID13:
-TC_ID14:
-TC_ID15:
-TC_ID16:
-TC_ID17:
-TC_ID18:
-TC_ID19:
-TC_ID20:
+  A_TC_ID10: Assert H2 at the blog section
+  A_TC_ID11: Assert blog description text
+  A_TC_ID12: Assert 3 counters
+  TC_ID13: Assert 3 posts have images
+  TC_ID14: Click 3 latest posts
+  A_TC_ID15: Click go to blog
  Partners section:
-TC_ID:
-TC_ID:
-TC_ID:
-TC_ID:
+  A_TC_ID16: Assert partners H2
+  A_TC_ID17: Check partners links
+ Header:
+  TC_ID16: Check site icon existing
+  TC_ID17: Click site icon
+  TC_ID18: Click marketplace btn
+  TC_ID19: Click blog btn
+  TC_ID20: Click blog dropdown
+  TC_ID21: Click blog drift category btn
+  TC_ID22: Click blog drag category btn
+  TC_ID23: Click blog time attack category btn
+  TC_ID24: Click calendar btn
+  A_TC_ID25: Click login btn
+  TC_ID26: Click register btn
+  TC_ID27: Click messages btn /authenticated/
+  TC_ID28: Click like btn /authenticated/
+  TC_ID29: Check user img /authenticated/
+  TC_ID30: Check user name and click /authenticated/
+  TC_ID31: Click user dropdown btn /authenticated/
+ Footer:
+  TC_ID32: Check marketplace subtitle
+  TC_ID33: Click Cars category btn
+  TC_ID34: Click Parts category btn
+  TC_ID35: Click Services category btn
+  TC_ID36: Check blog subtitle
+  TC_ID37: Click drag btn
+  TC_ID38: Click drift btn
+  TC_ID39: Click time-attack btn
+  TC_ID40: Check Partners subtitle
+  TC_ID41: Check 22rt partner link
+  TC_ID42: Check Erafar.by partner link
+  TC_ID43: Check Racelane partner link
+  TC_ID44: Check info subtitle
+  TC_ID45: Click FAQ btn
+  TC_ID46: Click About Us btn
+  TC_ID47: Click Contacts btn
+  TC_ID48: Check logo footer
+  TC_ID49: Check Sitename footer
+  TC_ID50: Check site description footer
+  TC_ID51: Check copyright text
+  TC_ID52: Click user agreement btn
+  TC_ID53: Check instagram link
+  TC_ID54: Check linkedin link
 
 
 
-Base page
- Header section:
-TC_ID:
-TC_ID:
-TC_ID:
+2.Register Page (/tests/register_page.py)
+ TC_ID1: Register new user with valid data
+ TC_ID56: Try register new user with invalid email
+ TC_ID57: Try register new user without nickiname
+ TC_ID58: Try register new user without email
+ TC_ID59: Try register new user without password1
+ TC_ID60: Try register new user without password2
+ TC_ID61: Try register new user without all fields
+ TC_ID62: Try register new user with already existing nickname
+ TC_ID63: Try register new user with already existing email
+ TC_ID64: Try register new user with already existing nickname
+ TC_ID65: Try register new user with 2 different passwords
+ TC_ID66: Try register new user with long nickname
+ TC_ID67: Click user agreement button
 
- Footer section:
-TC_ID:
-TC_ID:
-TC_ID:
+
+
+
+3.Login Page (/tests/login_page.py)
+ A_TC_ID1: Fill login form with valid data
+ A_TC_ID2: Fill login form with invalid username and valid password
+ A_TC_ID3: Fill login form with valid username and invalid password
+ TC_ID4: Fill login form with username and without password
+ TC_ID5: Fill login form with password without username
+
+4.Account Page (/tests/account_page.py)
+
+5.My items Page (/tests/my_items_page.py)
+
+6.Favorites Page (/tests/favorites_page.py)
+
+7.Public profile Page (/tests/public_profile_page.py)
+
+8.Marketplace Page (/tests/marketplace_page.py)
+
+9.Item Page (/tests/item_page.py)
+
+10.Chat Page (/tests/chat_page.py)
+
+11.Chat detail Page (/tests/chat_detail_page.py)
+
+12.Blog Page (/tests/blog_page.py)
+
+13.Blog category Page (/tests/blog_category_page.py)
+
+14.Post Page (/tests/post_page.py)
+
+15.Calendar Page (/tests/calendar_page.py)
+
+16.About us Page (/tests/about_page.py)
+
+17.Contact Page (/tests/contact_page.py)
+
+

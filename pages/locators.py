@@ -82,10 +82,9 @@ class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#")
     USERNAME_FIELD = (By.CSS_SELECTOR, "#username")
     PASSWORD_FIELD = (By.CSS_SELECTOR, "#password")
-    SUBMIT_BTN = (By.CSS_SELECTOR, "body > div > div > div > div.mt-2.sm\:mx-auto.sm\
-    :w-full.sm\:max-w-sm > form > div:nth-child(4) > button")
+    SUBMIT_BTN = (By.CSS_SELECTOR, "body > div > div > div > div.mt-2.sm\:mx-auto.sm\:w-full.sm\:max-w-sm > form > div:nth-child(4) > button")
     REGISTER_LINK_BTN = (By.CSS_SELECTOR, "#")
-    ERROR_MSG_TEXT = (By.CSS_SELECTOR, "#")
+    ERROR_MSG_TEXT = (By.CSS_SELECTOR, ".errorlist.nonfield > li")
 
 
 class RegisterPageLocators:

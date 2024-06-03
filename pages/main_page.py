@@ -64,3 +64,23 @@ class MainPage(BasePage):
         assert self.is_displayed(*MainPageLocators.OUR_PARTNERS_TITLE), "El is not presented"
         assert self.result_text(*MainPageLocators.OUR_PARTNERS_TITLE) == "Наши партнеры",\
             "The text of blog h2 is different."
+
+    def check_our_partners_images(self):
+        assert self.is_displayed(*MainPageLocators.PARTNER_22RT_IMG), "22rt img is not presented"
+        assert self.is_displayed(*MainPageLocators.PARTNER_R1_IMG), "Racing.by link is not presented"
+        assert self.is_displayed(*MainPageLocators.PARTNER_TUMANOV_IMG), "Tumanov img is not presented"
+        assert self.is_displayed(*MainPageLocators.PARTNER_ERAFAR_IMG), "ERAFAR img is not presented"
+        assert self.is_displayed(*MainPageLocators.PARTNER_RACELANE_IMG), "Racelane img is not presented"
+
+    def check_our_partners_links(self):
+        assert self.result_href(*MainPageLocators.PARTNER_22RT_LINK) == "https://www.instagram.com/22rt_trackday/", \
+            "The 22rt href is different."
+        assert self.result_href(*MainPageLocators.PARTNER_R1_LINK) == "http://127.0.0.1:8000/#", \
+            "The Racing.by href is different."
+        assert self.result_href(*MainPageLocators.PARTNER_TUMANOV_LINK) == "https://www.instagram.com/tumanov_photo/", \
+            "The Tumanov href is different."
+        assert self.result_href(*MainPageLocators.PARTNER_ERAFAR_LINK) == "https://www.instagram.com/erafar.by", \
+            "The ERAFAR href is different."
+        assert self.result_href(*MainPageLocators.PARTNER_RACELANE_LINK) == "https://www.instagram.com/racelaneapp/", \
+            "The Racelane href is different."
+

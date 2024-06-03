@@ -21,6 +21,9 @@ class BasePage():
     def result_text(self, how, what):
         return self.browser.find_element(how, what).text
 
+    def result_href(self, how, what):
+        return self.browser.find_element(how, what).get_attribute("href")
+
     def assert_status_code_200(self):
         assert requests.head(self.url).status_code == 200, "The status code is not 200"
 
@@ -29,11 +32,11 @@ class BasePage():
 
     def click_login_btn_header(self):
         self.click_button(*BasePageLocators.LOGIN_BTN_HEADER)
-        assert self.browser.current_url == "http://127.0.0.1:8000/login/"
+        assert self.browser.current_url == "https://race-marketplace.by/login/"
 
     def click_register_btn_header(self):
         self.click_button(*BasePageLocators.REGISTER_BTN_HEADER)
-        assert self.browser.current_url == "http://127.0.0.1:8000/signup/"
+        assert self.browser.current_url == "https://race-marketplace.by/signup/"
 
     def click_user_dropdown_btn(self):
         self.click_button(*BasePageLocators.AUTH_USERNAME_DROPDOWN_HEADER)
