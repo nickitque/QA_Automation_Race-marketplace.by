@@ -103,54 +103,80 @@ def test_guest_can_partners_images_and_links_tc_id17(browser):
     page.check_our_partners_links()
 
 
-def test_guest_tc_id16(browser):
+def test_guest_can_see_partners_h2_tc_id16(browser):
+    """Checking the presence of partners h2"""
     page = MainPage(browser, link)
     page.open()
+    page.check_our_partners_h2_text()
 
 
-def test_guest_tc_id17(browser):
+def test_guest_can_see_partners_urls_tc_id17(browser):
+    """Checking the links inside parners rounded cards."""
     page = MainPage(browser, link)
     page.open()
+    page.check_our_partners_links()
 
 
-
-def test_guest_tc_id18(browser):
+def test_guest_can_click_marketplace_btn_header_tc_id18(browser):
+    """Clicking the 'marketplace' button in header."""
     page = MainPage(browser, link)
     page.open()
+    page.click_marketplace_btn_header()
 
 
-def test_guest_tc_id19(browser):
+def test_guest_can_click_blog_btn_header_tc_id19(browser):
+    """Clicking the 'blog' button in header."""
     page = MainPage(browser, link)
     page.open()
+    page.click_blog_btn_header()
 
 
-def test_guest_tc_id20(browser):
+def test_guest_can_click_blog_dropdown_header_tc_id20(browser):
+    """Clicking Blog categories dropdown in header."""
     page = MainPage(browser, link)
     page.open()
+    page.click_blog_dropdown_btn_header()
 
 
-def test_guest_tc_id21(browser):
+def test_guest_can_click_drift_category_header_tc_id21(browser):
+    """Clicking 'Drift' category in header."""
     page = MainPage(browser, link)
     page.open()
+    page.click_blog_dropdown_btn_header()
+    page.click_blog_drift_dropdown_btn_header()
 
 
-def test_guest_tc_id22(browser):
+def test_guest_can_click_drag_category_header_tc_id22(browser):
+    """Clicking 'Drag' category in header."""
     page = MainPage(browser, link)
     page.open()
+    page.click_blog_dropdown_btn_header()
+    page.click_blog_drag_dropdown_btn_header()
 
 
-def test_guest_tc_id23(browser):
+def test_guest_can_click_timeattack_category_header_tc_id23(browser):
+    """Clicking 'Time-attack' category in header."""
     page = MainPage(browser, link)
     page.open()
+    page.click_blog_dropdown_btn_header()
+    page.click_blog_timeattack_dropdown_btn_header()
+
+
+def test_guest_can_click_calendar_btn_header_tc_id24(browser):
+    """Clicking 'Calendar' button in header."""
+    page = MainPage(browser, link)
+    page.open()
+    page.click_calendar_btn_header()
+
+
+def test_guest_can_go_to_login_page_tc_id25(browser):
+    """Clicking Login btn in Header."""
+    page = MainPage(browser, link)
+    page.open()
+    page.click_login_btn_header()
 
 
 def test_guest_should_see_login_link(browser):
     page = MainPage(browser, link)
     page.open()
     page.should_be_login_link()
-
-
-def test_guest_can_go_to_login_page_tc_id25(browser):
-    page = MainPage(browser, link)
-    page.open()
-    page.click_login_btn_header()

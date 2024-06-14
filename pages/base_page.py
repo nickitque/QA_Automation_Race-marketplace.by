@@ -43,3 +43,31 @@ class BasePage():
 
     def click_logout_btn(self):
         self.click_button(*BasePageLocators.AUTH_LOGOUT_BTN_HEADER)
+
+    def click_marketplace_btn_header(self):
+        self.click_button(*BasePageLocators.MARKETPLACE_BTN_HEADER)
+        assert self.browser.current_url == "https://race-marketplace.by/items/"
+
+    def click_blog_btn_header(self):
+        self.click_button(*BasePageLocators.BLOG_BTN_HEADER)
+        assert self.browser.current_url == "https://race-marketplace.by/blog/"
+
+    def click_blog_dropdown_btn_header(self):
+        self.click_button(*BasePageLocators.BLOG_DROPDOWN_BTN_HEADER)
+
+    def click_blog_drift_dropdown_btn_header(self):
+        self.click_button(*BasePageLocators.BLOG_DROPDOWN_DRIFT_BTN_HEADER)
+        assert self.browser.current_url == "https://race-marketplace.by/blog/category/Drift/"
+
+    def click_blog_drag_dropdown_btn_header(self):
+        self.click_button(*BasePageLocators.BLOG_DROPDOWN_DRAG_BTN_HEADER)
+        assert self.browser.current_url == "https://race-marketplace.by/blog/category/drag/"
+
+    def click_blog_timeattack_dropdown_btn_header(self):
+        self.click_button(*BasePageLocators.BLOG_DROPDOWN_TA_BTN_HEADER)
+        assert self.browser.current_url == "https://race-marketplace.by/blog/category/Time-attack/"
+
+
+    def click_calendar_btn_header(self):
+        self.click_button(*BasePageLocators.CALENDAR_BTN_HEADER)
+        assert self.browser.current_url == "https://race-marketplace.by/events/"

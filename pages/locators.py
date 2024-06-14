@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 class BasePageLocators:
     LOGO_IMG_HEADER = (By.CSS_SELECTOR, "#header_site_icon")
     LOGO_URL_HEADER = (By.CSS_SELECTOR, "#header_site_icon_url")
-    MARKETPLACE_BTN_HEADER = (By.CSS_SELECTOR, "#marketplace-btn-header")
+    MARKETPLACE_BTN_HEADER = (By.XPATH, "#marketplace-btn-header")
     BLOG_BTN_HEADER = (By.CSS_SELECTOR, "#blog-btn-header")
     BLOG_DROPDOWN_BTN_HEADER = (By.CSS_SELECTOR, "#dropdownNavbarLink")
     BLOG_DROPDOWN_DRIFT_BTN_HEADER = (By.CSS_SELECTOR, "#drift-category-header")
@@ -38,7 +38,7 @@ class BasePageLocators:
     PARTNER_RACELANE_BTN_FOOTER = (By.CSS_SELECTOR, "#racelane-link-footer")
     FAQ_BTN_FOOTER = (By.CSS_SELECTOR, "#faq-link-footer")
     ABOUT_BTN_FOOTER = (By.CSS_SELECTOR, "#about-link-footer")
-    CONTACTS_BTN_FOOTER = (By.CSS_SELECTOR, "#contact-link-footer")
+    CONTACTS_BTN_FOOTER = (By.CSS_SELECTOR, "#")
     LOGO_FOOTER = (By.CSS_SELECTOR, "#")
     BRAND_NAME_FOOTER = (By.CSS_SELECTOR, "#sitename-footer")
     BRAND_DESCR_FOOTER = (By.CSS_SELECTOR, "#site-description-footer")

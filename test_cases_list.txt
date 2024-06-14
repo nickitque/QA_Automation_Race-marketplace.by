@@ -26,15 +26,13 @@ you can find test functions with tc_id{num} at the end of func title.
   A_TC_ID16: Assert partners H2
   A_TC_ID17: Check partners links
  Header:
-  TC_ID16: Check site icon existing
-  TC_ID17: Click site icon
-  TC_ID18: Click marketplace btn
-  TC_ID19: Click blog btn
-  TC_ID20: Click blog dropdown
-  TC_ID21: Click blog drift category btn
-  TC_ID22: Click blog drag category btn
-  TC_ID23: Click blog time attack category btn
-  TC_ID24: Click calendar btn
+  A_TC_ID18: Click marketplace btn
+  A_TC_ID19: Click blog btn
+  A_TC_ID20: Click blog dropdown
+  A_TC_ID21: Click blog drift category btn
+  A_TC_ID22: Click blog drag category btn
+  A_TC_ID23: Click blog time attack category btn
+  A_TC_ID24: Click calendar btn
   A_TC_ID25: Click login btn
   TC_ID26: Click register btn
   TC_ID27: Click messages btn /authenticated/

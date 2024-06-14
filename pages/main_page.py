@@ -24,11 +24,11 @@ class MainPage(BasePage):
 
     def click_hero_marketplace_btn(self):
         self.click_button(*MainPageLocators.HERO_MARKETPLACE_BTN)
-        assert self.browser.current_url == "http://127.0.0.1:8000/items/"
+        assert self.browser.current_url == "https://race-marketplace.by/items/"
 
     def click_hero_about_us_btn(self):
         self.click_button(*MainPageLocators.HERO_ABOUT_US_BTN)
-        assert self.browser.current_url == "http://127.0.0.1:8000/about/"
+        assert self.browser.current_url == "https://race-marketplace.by/about/"
 
     def count_item_cards_qty(self):
         cards = self.browser.find_elements(*MainPageLocators.ITEM_CARDS)
@@ -36,7 +36,7 @@ class MainPage(BasePage):
 
     def click_go_to_marketplace_btn(self):
         self.click_button(*MainPageLocators.GO_TO_MARKETPLACE_BTN)
-        assert self.browser.current_url == "http://127.0.0.1:8000/items/"
+        assert self.browser.current_url == "https://race-marketplace.by/items/"
 
     def should_be_blog_h2(self):
         assert self.is_displayed(*MainPageLocators.BLOG_TITLE), "There is no blog H2."
@@ -58,7 +58,7 @@ class MainPage(BasePage):
 
     def click_go_to_blog_btn(self):
         self.click_button(*MainPageLocators.GO_TO_BLOG_BTN)
-        assert self.browser.current_url == "http://127.0.0.1:8000/blog/"
+        assert self.browser.current_url == "https://race-marketplace.by/blog/"
 
     def check_our_partners_h2_text(self):
         assert self.is_displayed(*MainPageLocators.OUR_PARTNERS_TITLE), "El is not presented"
@@ -75,7 +75,7 @@ class MainPage(BasePage):
     def check_our_partners_links(self):
         assert self.result_href(*MainPageLocators.PARTNER_22RT_LINK) == "https://www.instagram.com/22rt_trackday/", \
             "The 22rt href is different."
-        assert self.result_href(*MainPageLocators.PARTNER_R1_LINK) == "http://127.0.0.1:8000/#", \
+        assert self.result_href(*MainPageLocators.PARTNER_R1_LINK) == "https://racing.by/", \
             "The Racing.by href is different."
         assert self.result_href(*MainPageLocators.PARTNER_TUMANOV_LINK) == "https://www.instagram.com/tumanov_photo/", \
             "The Tumanov href is different."
