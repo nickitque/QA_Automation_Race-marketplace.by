@@ -43,7 +43,7 @@ class BasePageLocators:
     BRAND_NAME_FOOTER = (By.CSS_SELECTOR, "#sitename-footer")
     BRAND_DESCR_FOOTER = (By.CSS_SELECTOR, "#site-description-footer")
     COPYRIGHT_TEXT_FOOTER = (By.CSS_SELECTOR, "#copyright-text-footer")
-    INTSTAGRAM_BTN_FOOTER = (By.CSS_SELECTOR, "#inst-link-footer")
+    INSTAGRAM_BTN_FOOTER = (By.CSS_SELECTOR, "#inst-link-footer")
     LINKEDIN_BTN_FOOTER = (By.CSS_SELECTOR, "#linkedin-link-footer")
 
 

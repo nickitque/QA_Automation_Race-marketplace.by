@@ -83,4 +83,3 @@ class MainPage(BasePage):
             "The ERAFAR href is different."
         assert self.result_href(*MainPageLocators.PARTNER_RACELANE_LINK) == "https://www.instagram.com/racelaneapp/", \
             "The Racelane href is different."
-

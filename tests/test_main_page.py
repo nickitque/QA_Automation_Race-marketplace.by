@@ -111,7 +111,7 @@ def test_guest_can_see_partners_h2_tc_id16(browser):
 
 
 def test_guest_can_see_partners_urls_tc_id17(browser):
-    """Checking the links inside parners rounded cards."""
+    """Checking the links inside partners rounded cards."""
     page = MainPage(browser, link)
     page.open()
     page.check_our_partners_links()

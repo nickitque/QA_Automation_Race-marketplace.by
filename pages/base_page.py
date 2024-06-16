@@ -57,7 +57,7 @@ class BasePage():
 
     def click_blog_drift_dropdown_btn_header(self):
         self.click_button(*BasePageLocators.BLOG_DROPDOWN_DRIFT_BTN_HEADER)
-        assert self.browser.current_url == "https://race-marketplace.by/blog/category/Drift/"
+        assert self.browser.current_url == "https://race-marketplace.by/blog/category/drift/"
 
     def click_blog_drag_dropdown_btn_header(self):
         self.click_button(*BasePageLocators.BLOG_DROPDOWN_DRAG_BTN_HEADER)

@@ -1,6 +1,6 @@
-Test cases with "A_" prefix means that it's automated.
-Tests are placed at "/tests/{page_name}.py", inside the files
-you can find test functions with tc_id{num} at the end of func title.
+Test cases with "A_" prefix means that it's already automated.
+Tests can be found at "/tests/{page_name}.py", inside the files
+there are tests with tc_id{num} at the end of test title.
 
 
 1.Main Page (/tests/main_page.py):
