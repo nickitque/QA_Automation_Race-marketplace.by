@@ -15,7 +15,7 @@ class LoginPage(BasePage):
 
     def fill_login_form_with_valid_data(self):
         self.browser.find_element(*LoginPageLocators.USERNAME_FIELD).send_keys("Race-Marketplace")
-        self.browser.find_element(*LoginPageLocators.PASSWORD_FIELD).send_keys("Hahahalol.")
+        self.browser.find_element(*LoginPageLocators.PASSWORD_FIELD).send_keys("Pspslim888DC55")
 
     def fill_login_form_with_invalid_username(self):
         self.browser.find_element(*LoginPageLocators.USERNAME_FIELD).send_keys("Race-Marketplac")

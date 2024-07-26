@@ -22,7 +22,7 @@ class BasePageLocators:
     AUTH_MY_ITEMS_BTN_HEADER = (By.CSS_SELECTOR, "#")
     AUTH_MY_FAVORITES_BTN_HEADER = (By.CSS_SELECTOR, "#")
     AUTH_SETTINGS_BTN_HEADER = (By.CSS_SELECTOR, "#")
-    AUTH_LOGOUT_BTN_HEADER = (By.CSS_SELECTOR, "#logout")
+    AUTH_LOGOUT_BTN_HEADER = (By.CSS_SELECTOR, "#logout_btn")
     MARKETPLACE_H2_FOOTER = (By.CSS_SELECTOR, "#marketplace-h2-footer")
     BLOG_H2_FOOTER = (By.CSS_SELECTOR, "#blog-h2-footer")
     PARTNERS_H2_FOOTER = (By.CSS_SELECTOR, "#partners-h2-footer")
